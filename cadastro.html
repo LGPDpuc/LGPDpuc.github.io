@@ -52,25 +52,26 @@
         <div class="row linhaLogin">
             
             <div class="col-mg-12 col-lg-12 col-sm-12 login"
-            style="border-radius:8px;background-color: rgba(83, 235, 255, 0.075); padding-top: 50px;  margin-top: 180px">
+            style="border-radius:8px;background-color: #677385; padding-top: 50px;  margin-top: 180px">
             
-            <h2 style="text-align: center;padding-bottom:40px;">Tela de Cadastro</h2>
+            <h2 style="text-align: center;padding-bottom:40px;" id="tituloCadastro"></h2>
+
                 <div class="row">
 
                     <div class="col-sm-1"></div>
                     <label for="text" class="col-sm-2 col-form-label" style=" color: black;">
-                        <h5 style="color: rgb(77, 60, 60);">Nome</h5>
+                        <h5 style="color: rgba(0, 0, 0, 0.699);" id="inputNome"></h5>
                     </label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control-plaintext" id="nomeInput"
                             style="margin-top: 5px; background-color:rgb(255, 255, 255);border-color: rgb(255, 255, 255); border-radius: 10px; margin-bottom: 10px;">
-                        <p id="nomeInputErr"></p>
-                    </div>
+                            <p id="nomeInputErr" class="nomeInputErro"></p>
+                        </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"></div>
                     <label for="emailInput" class="col-sm-2 col-form-label">
-                        <h5 style="color: rgb(255, 255, 255);">Email</h5>
+                        <h5 style="color: rgba(0, 0, 0, 0.699);" id="inputEmail"></h5>
                     </label>
                     <p id="throwEmail"></p>
                     <div class="col-sm-6 ">
@@ -83,7 +84,7 @@
                 <div class="row">
                     <div class="col-sm-1"></div>
                     <label for="loginInput" class="col-sm-2 col-form-label" style=" color: black;">
-                        <h5 style="color: rgb(170, 170, 170);">Login</h5>
+                        <h5 style="color: rgba(0, 0, 0, 0.699);" id="loginInputt"></h5>
                     </label>
                     <p id="throwLogin"></p>
                     <div class="col-sm-6">
@@ -96,7 +97,7 @@
                 <div class="row">
                     <div class="col-sm-1"></div>
                     <label for="inputPassword" class="col-sm-2 col-form-label">
-                        <h5 style="color: rgb(170, 170, 170);">Senha</h5>
+                        <h5 style="color: rgba(0, 0, 0, 0.699);" id="inputSenha"></h5>
                     </label>
                     <div class="col-sm-6">
                         <input type="password" class="form-control" id="senhaInput"
@@ -110,7 +111,7 @@
                 <div class="row">
                     <div class="col-sm-1"></div>
                     <label for="cidadeInput" class="col-sm-2 col-form-label" style=" color: black;">
-                        <h5 style="color: rgb(255, 255, 255);">Cidade</h5>
+                        <h5 style="color: rgba(0, 0, 0, 0.699);" id="inputCidade"></h5>
                     </label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control-plaintext" id="cidadeInput"
@@ -122,7 +123,7 @@
                     <div class="col-sm-1"></div>
                     <label for="dataDeNascimentoInput" class="col-sm-2 col-form-label"
                         style=" color: black; display: inline;">
-                        <h5 style="color: rgb(255, 255, 255);">Data_de_nascimento</h5>
+                        <h5 style="color: rgba(0, 0, 0, 0.699);" id="inputDate"></h5>
                     </label>
                     <div class="col-sm-3 col-lg-0"></div>
                     <div class="col-sm-3">
@@ -136,9 +137,7 @@
                 </p>
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12"
-                        style="text-align: center; margin-bottom: 30px; margin-top:20px">
-                        <button onclick="criaUsuario()" class="btn btn-primary" id="buttonCadastrar"
-                            style="width: 25%;">Cadastrar</button>
+                        style="text-align: center; margin-bottom: 30px; margin-top:20px" id="buttonCadastra">
 
                     </div>
                 </div>
@@ -150,7 +149,7 @@
 
 
 
-
+    <script src="./cadastro.js"></script>
     <!-- Optional JavaScript -->
     <script src="https://lgpdpuc.github.io/scripts.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
